@@ -1,29 +1,25 @@
 
-Name: app-simple-mode
+Name: app-simple-mode-core
+Group: ClearOS/Libraries
 Version: 6.2.0.beta3
 Release: 1%{dist}
 Summary: Translation missing (simple_mode_base_system_mode) - APIs and install
 License: LGPLv3
-Group: ClearOS/Libraries
+Packager: ClearFoundation
+Vendor: ClearFoundation
 Source: app-simple-mode-%{version}.tar.gz
 Buildarch: noarch
-
-%description
-Translation missing (simple_mode_app_long_description)
-
-%package core
-Summary: Translation missing (simple_mode_base_system_mode) - APIs and install
 Provides: system-mode-driver
 Requires: app-base-core
 Requires: app-mode-core
 
-%description core
+%description
 Translation missing (simple_mode_app_long_description)
 
 This package provides the core API and libraries.
 
 %prep
-%setup -q
+%setup -q -n app-simple-mode-%{version}
 %build
 
 %install
@@ -31,7 +27,7 @@ mkdir -p -m 755 %{buildroot}/usr/clearos/apps/simple_mode
 cp -r * %{buildroot}/usr/clearos/apps/simple_mode/
 
 
-%post core
+%post
 logger -p local6.notice -t installer 'app-simple-mode-core - installing'
 
 if [ $1 -eq 1 ]; then
@@ -42,7 +38,7 @@ fi
 
 exit 0
 
-%preun core
+%preun
 if [ $1 -eq 0 ]; then
     logger -p local6.notice -t installer 'app-simple-mode-core - uninstalling'
     [ -x /usr/clearos/apps/simple_mode/deploy/uninstall ] && /usr/clearos/apps/simple_mode/deploy/uninstall
@@ -50,7 +46,7 @@ fi
 
 exit 0
 
-%files core
+%files
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/simple_mode/packaging
 %exclude /usr/clearos/apps/simple_mode/tests
