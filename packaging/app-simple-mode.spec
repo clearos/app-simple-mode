@@ -4,7 +4,7 @@ Group: ClearOS/Libraries
 Epoch: 1
 Version: 1.0.1
 Release: 1%{dist}
-Summary: Translation missing (simple_mode_base_system_mode) - APIs and install
+Summary: Simple Mode - APIs and install
 License: LGPLv3
 Packager: ClearFoundation
 Vendor: ClearFoundation
@@ -15,7 +15,7 @@ Requires: app-base-core
 Requires: app-mode-core
 
 %description
-Translation missing (simple_mode_app_long_description)
+The Simple Mode app provides a standalone driver for the Central Management system.
 
 This package provides the core API and libraries.
 
