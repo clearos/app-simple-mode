@@ -1,13 +1,14 @@
 
 Name: app-simple-mode
 Epoch: 1
-Version: 1.0.2
+Version: 1.0.4
 Release: 1%{dist}
 Summary: Simple Mode - APIs and install
 License: LGPLv3
 Group: ClearOS/Libraries
 Source: app-simple-mode-%{version}.tar.gz
 Buildarch: noarch
+
 %description
 The Simple Mode app provides a standalone driver for the Central Management system.
 
