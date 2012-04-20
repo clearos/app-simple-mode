@@ -1,7 +1,7 @@
 
 Name: app-simple-mode
 Epoch: 1
-Version: 1.1.0
+Version: 1.1.1
 Release: 1%{dist}
 Summary: Simple Mode - Core
 License: LGPLv3
@@ -16,7 +16,7 @@ The Simple Mode app provides a standalone driver for the Central Management syst
 Summary: Simple Mode - Core
 Provides: system-mode-driver
 Requires: app-base-core
-Requires: app-mode-core
+Requires: app-mode-core >= 1:1.1.0
 
 %description core
 The Simple Mode app provides a standalone driver for the Central Management system.
