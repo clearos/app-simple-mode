@@ -1,7 +1,7 @@
 
 Name: app-simple-mode
 Epoch: 1
-Version: 1.1.1
+Version: 1.4.20
 Release: 1%{dist}
 Summary: Simple Mode - Core
 License: LGPLv3
