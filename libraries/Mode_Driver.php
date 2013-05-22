@@ -3,9 +3,9 @@
 /**
  * Mode driver.
  *
- * @category   Apps
- * @package    Simple_Mode
- * @subpackage Libraries
+ * @category   apps
+ * @package    simple-mode
+ * @subpackage libraries
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
@@ -67,9 +67,9 @@ clearos_load_library('mode/Mode_Engine');
 /**
  * Mode driver.
  *
- * @category   Apps
- * @package    Simple_Mode
- * @subpackage Libraries
+ * @category   apps
+ * @package    simple-mode
+ * @subpackage libraries
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
