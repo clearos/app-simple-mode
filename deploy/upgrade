@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# FIXME: this is just a hack for 6.2.0 RC1 to final. Remove after release.
-if [ -e /var/clearos/mode/mode.conf.rpmsave ]; then
-    mv /var/clearos/mode/mode.conf.rpmsave /var/clearos/mode/mode.conf
-fi
