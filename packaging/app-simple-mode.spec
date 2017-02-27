@@ -1,7 +1,7 @@
 
 Name: app-simple-mode
 Epoch: 1
-Version: 2.1.6
+Version: 2.3.20
 Release: 1%{dist}
 Summary: Simple Mode - Core
 License: LGPLv3
@@ -54,6 +54,7 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/simple_mode/packaging
+%exclude /usr/clearos/apps/simple_mode/unify.json
 %dir /usr/clearos/apps/simple_mode
 /usr/clearos/apps/simple_mode/deploy
 /usr/clearos/apps/simple_mode/language
